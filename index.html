@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tên của lớp học</title>
+</head>
+<body>
+<script>
+    function isNameClass(str) {
+        let regexp = /^[CAP]+[0-9]{4}[GHIKLM]$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return  false;
+    }
+    let nameClass = prompt("Nhập tên lớp ");
+    if (isNameClass(nameClass)) {
+        alert("Tên lớp hợp lệ")
+    } else {
+        alert("Tên lớp không hợp lệ")
+    }
+</script>
+</body>
+</html>
